@@ -11,6 +11,25 @@
     <name>triton_java_api</name>
     <packaging>jar</packaging>
     <description>Java API for Triton Inference server.</description>
+  <licenses>
+    <license>
+      <name>BSD-3-Clause license</name>
+      <url>https://github.com/wyona/triton-client/blob/main/LICENSE</url>
+    </license>
+  </licenses>
+  <developers>
+     <developer>
+       <name>Michael Wechner</name>
+       <email>michael.wechner@wyona.com</email>
+       <organization>Wyona</organization>
+       <organizationUrl>http://wyona.com</organizationUrl>
+     </developer>
+   </developers>
+  <scm>
+    <connection>scm:git:https://github.com/wyona/triton-client.git</connection>
+    <developerConnection>scm:git:git@github.com:wyona/triton-client.git</developerConnection>
+    <url>https://github.com/wyona/triton-client/tree/main</url>
+  </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
