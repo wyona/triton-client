@@ -11,6 +11,7 @@
     <name>triton_java_api</name>
     <packaging>jar</packaging>
     <description>Java API for Triton Inference server.</description>
+    <url>https://github.com/wyona/triton-client</url>
   <licenses>
     <license>
       <name>BSD-3-Clause license</name>
