@@ -31,7 +31,6 @@ import triton.client.pojo.IOTensor;
 
 /**
  * @author xiafei.qiuxf
- * @date 2021/4/13
  */
 public class InferRequestedOutput {
     /**

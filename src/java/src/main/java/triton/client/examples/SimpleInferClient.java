@@ -40,7 +40,6 @@ import triton.client.pojo.DataType;
 
 /**
  * @author xiafei.qiuxf
- * @date 2021/7/28
  */
 public class SimpleInferClient {
   public static void main(String[] args) throws Exception

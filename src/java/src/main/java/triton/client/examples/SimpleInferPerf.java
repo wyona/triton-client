@@ -45,7 +45,6 @@ import com.google.common.util.concurrent.AtomicDouble;
  * Do inference via a stand-alone (which is not hosted inside EAS) triton server.
  *
  * @author xiafei.qiuxf
- * @date 2021/5/7
  */
 public class SimpleInferPerf {
   public static void main(String[] args) throws Exception

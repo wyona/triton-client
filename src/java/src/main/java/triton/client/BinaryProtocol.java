@@ -45,7 +45,6 @@ import com.google.common.primitives.Shorts;
 
 /**
  * @author xiafei.qiuxf
- * @date 2021/4/20
  */
 public class BinaryProtocol {
 

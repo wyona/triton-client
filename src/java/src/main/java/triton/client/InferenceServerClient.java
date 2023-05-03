@@ -28,7 +28,6 @@ package triton.client;
 
 /**
  * @author xiafei.qiuxf
- * @date 2021/4/13
  */
 
 import java.io.ByteArrayOutputStream;
