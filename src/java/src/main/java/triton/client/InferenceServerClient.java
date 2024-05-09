@@ -174,6 +174,8 @@ public class InferenceServerClient implements AutoCloseable {
 
     private int retryCnt = 3;
 
+    private boolean ssl = false;
+
     /**
      * Create an InferenceServerClient object.
      *
@@ -193,6 +195,11 @@ public class InferenceServerClient implements AutoCloseable {
 
     public InferenceServerClient(String ipPort, int connectionTimeout, int networkTimeout) throws IOException {
         this(new FixedEndpoint(ipPort), connectionTimeout, networkTimeout);
+    }
+    
+    public InferenceServerClient(String ipPort, int connectionTimeout, int networkTimeout, boolean ssl) throws IOException {
+        this(new FixedEndpoint(ipPort), connectionTimeout, networkTimeout);
+        this.ssl = ssl;
     }
 
     public InferenceServerClient(AbstractEndpoint endpoint, HttpConfig httpConfig) throws IOException {
@@ -324,7 +331,8 @@ public class InferenceServerClient implements AutoCloseable {
     }
 
     private String getUrl() throws Exception {
-        return "http://" + this.endpoint.getEndpoint();
+        String scheme = ssl ? "https://" : "http://"
+        return scheme + this.endpoint.getEndpoint();
     }
 
     public InferResult infer(String modelName, List<InferInput> inputs, List<InferRequestedOutput> outputs)
