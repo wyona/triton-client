@@ -331,7 +331,7 @@ public class InferenceServerClient implements AutoCloseable {
     }
 
     private String getUrl() throws Exception {
-        String scheme = ssl ? "https://" : "http://"
+        String scheme = ssl ? "https://" : "http://";
         return scheme + this.endpoint.getEndpoint();
     }
 
